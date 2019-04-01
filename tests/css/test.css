@@ -1,0 +1,72 @@
+/* une regle css est composé de :
+- un selecteur qui selectionne les balises sur lesquelles le style va s'appliquer
+- un bloc de code délimitée par des accolades {}
+- une ou plusieurs priétes 
+- la valeur de chaque propriété
+- d'un ";" apres la valeur de chaque propriété
+standard du code css : un espace après le selecteur
+pas d'espace avant ":" et un espace aprés
+*/
+/* selection par type*/
+
+body{
+    background-color: burlywood;
+}  
+
+article {
+border: 2px solid red;
+
+}
+
+/* selection par descendance*/
+article p {
+    border: 1px solid blue;
+}
+
+nav {
+    border: 1px solid seagreen
+}
+/* groupement :section , header, footer*/
+
+section, header, footer {
+    border: 3px solid slateblue
+}
+/* selection par id et/ou classe  id en html = # en css et class = . en css*/
+#lien-3 {
+    color: brown
+}
+.link-nav-footer{
+    color: black
+}
+/* selection par pseudo class au survol d'un element ici lien ca change de couleur*/
+
+a:hover{
+    color: blueviolet
+}
+a:hover#lien-3 {
+    color: hotpink
+}
+/* mise en pages des spectacles a venir*/
+/* la pseudo class":after"permet de rajouter un element comme dernier fils de l'element specifié dans le selecteur
+il suffit ensuite de donner a ce nouvel element la propriété "clear" qui le fait passer sous les elements flottants*/
+section.col-3:after {
+    content: "";
+    display: block;
+    clear: both;
+    border: 20px solid green;
+}
+.col-3{
+    border: 100px solid pink;
+}
+.col-3 > article {
+    float: left;
+    width: 30%;
+}
+.clearfix{
+    clear: both;
+}
+/* pour que les images s'adaptent a la taille de leur element parent*/
+
+img{
+    max-width: 100%;
+}

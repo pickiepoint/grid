@@ -1,0 +1,64 @@
+header nav a {
+    text-decoration: none;
+    color: black;
+    background-color: rosybrown;
+    padding: o.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid snow;
+    margin: 1.5em;
+
+}
+
+
+header nav {
+    text-align: center;
+    
+}
+
+header nav a:hover {
+    background-color: black; 
+    color: white;
+}
+
+body {
+    background-color: rgb(189, 197, 199);
+     
+  }
+
+  h1{
+      font-size: 3em;
+      margin: 0;
+      padding: 20px 0;    
+      color: rgb(11, 11, 12);
+      text-shadow: 3px 3px 1px rgb(114, 99, 99);
+      text-decoration: underline black;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    box-shadow: inset 5px 0 5px -5px black;
+    font-style: italic;
+    color: black;
+    border: 1px rgb(0, 0, 0);
+    text-align: right;
+    float: right;
+    
+}
+h2{
+    margin: 2em;
+    color: rgb(10, 8, 19);
+    font-family: 'Times New Roman', Times, serif;
+    }
+img {
+    width: 30%;
+    float: left;
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border: gray;
+}
+article{
+    clear: both;
+}

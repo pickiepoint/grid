@@ -1,0 +1,78 @@
+
+body {
+    background-color: #6C757D;
+  }
+  /*container flexible*/
+  
+ header nav{ 
+    display: flex;
+    /*axe principal horizontal- passage a la ligne le cas échéant*/
+    flex-flow: row wrap;
+    /* l'espace disponible est mis entre les élements*/
+
+    
+  } 
+
+  
+  header nav div {
+    text-decoration: none;
+    color: black;
+    background-color: #FFC107;
+    border-radius: 0.25rem;
+    font-family: arial;
+    width: 16%;/*FLEXBASIS VA se baser sur cette valeur*/
+    padding: 2% 1%;
+    min-width: 100px;
+    margin: 0 1% 10px 1%;
+  
+    
+  }
+  header nav div:hover {
+    background-color: black;
+    color: white;
+  }
+  header nav {
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  
+  /* contenu principal*/
+  .container-section {
+      display: flex;
+      flex-flow: row wrap;
+
+  }
+  main section {
+    width: 100%;/* mobile first*/
+  }
+  main section > div {
+     padding: 2em;
+     margin: 1em;
+     background-color: #fff;
+     border-radius: 8px;
+  }
+  main section > div > h2 {
+    margin: 0px 0 20px 0;/* haut droit bas gauche */
+  }
+  
+  /* Média queries ********************************/
+  /* sup a  1200px */
+  @media screen and (min-width:1200px) {
+    main section {
+      width: 25%;
+    }
+  }
+  @media screen and (min-width:992px) and (max-width:1200px) {
+    main section {
+      width: 33.33333333%;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:992px) {
+    main section {
+      width: 50%;
+    }
+  }
+  
+  
