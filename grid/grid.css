@@ -1,0 +1,36 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* expression reguliere pour recuperer tous
+ les elements qui appartiennent a une class qui commence
+ par col- */
+ div[class^='col-']{
+     background-color: gray;
+     margin: 10px 1.04166666666666666667%;/*10/960X100 */
+}
+ /* elements qui prennent la place de 2 col */
+.col-lg-2{
+    width:14.5833333333333333333%;/* 140px/960px x 100*/
+}
+
+/* elements qui prennent la place de 4 col */
+.col-lg-4{
+    width: 31.25%;/*300px/960px x 100*/
+}
+
+    /* elements qui prennent la place de 6 col */
+.col-lg-6{
+    width: 47.916666666666666666666666667%;/*460px/960px x 100*/
+    }
+
+ /* elements qui prennent la place de 8 col */
+
+.col-lg-8{
+    width: 64.583333333333333333333333%;/*620/960px x 100*/
+}
+/* elements qui prennent la place de 12 col */
+.col-lg-12{
+    width: 97.9166667%;/*940/960px x 100*/
+}
